@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+}
+
+/*****************
+Header
+*****************/
+
+header .navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fffcfc;
+  z-index: 2;
+}
+.logo img {
+  height: 60px;
+}
+.logo {
+  display: flex;
+}
+.logotext {
+  margin-top: 12px;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  color: #277254;
+  font-size: 20px;
+}
+.navbar .menus {
+  padding: 0px 20px;
+  color: #277254;
+  margin: auto 0;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  position: relative;
+  font-family: Helvetica Neue;
+}
+.navbar .menus img {
+  height: 18px;
+}
+
+/***************
+Section 2
+****************/
+
+.section2 .searchbox {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  padding-right: 20px;
+}
+.section2 .searchbox input {
+  border: rgb(112, 112, 112);
+  background-color: rgba(224, 218, 218, 0.5);
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin: 0;
+  color: rgba(51, 52, 52, 0.2);
+  font-weight: lighter;
+  width: 300px;
+  height: 30px;
+}
+.section2 .searchbox .searchicon {
+  position: absolute;
+  right: 35px;
+  top: 5px;
+  height: 30px;
+  border: rgb(105, 104, 104);
+}
+.section2 .heading1 {
+  font-size: 2rem;
+  color: #277254;
+  font-weight: bolder;
+  padding-top: 144px;
+  font-family: Helvetica Neue;
+  margin-left: 18px;
+}
+.section2 .grid {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section2 .gridcontent {
+  position: relative;
+  background-color: #f0eded;
+  margin: 20px;
+  width: 93%;
+}
+.section2 .gridcontent .mainimage {
+  width: 270px;
+  padding: 10px 25px;
+  object-fit: cover;
+}
+.section2 .gallery {
+  margin: 0px 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section2 .image {
+  position: relative;
+  display: flex;
+  width: 90%;
+}
+
+.section2 .like img {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 15px;
+  right: 52%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.section2 .gridheading {
+  font-size: 0.8rem;
+  color: rgb(39, 114, 84);
+  font-weight: bolder;
+  display: flex;
+  padding-left: 10px;
+}
+.section2 .gridsubheading {
+  font-size: 0.55rem;
+  color: rgb(5, 131, 68);
+  font-weight: normal;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.section2 .textcontent {
+  position: absolute;
+  height: 160px;
+  top: 2%;
+  left: 47%;
+}
+.gridheading h1 {
+  padding-top: 12px;
+  font-size: 1.5rem;
+}
+.gridsubheading h2 {
+  padding-top: 20px;
+  color: #277254;
+  font-family: Helvetica Neue;
+  font-weight: 400;
+}
+.gridtext {
+  color: rgb(39, 114, 84);
+  font-size: 0.55rem;
+  padding: 10px;
+  height: 50px;
+}
+.gridtext p {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+.section2 .input-button input {
+  border-radius: 6px;
+  font-size: 0.88rem;
+  position: absolute;
+  left: 93%;
+  top: 113%;
+  bottom: 0;
+  background-color: #277254;
+  border: none;
+  width: 70px;
+  height: 26px;
+  color: #fff;
+  font-family: Helvetica Neue;
+  font-weight: 100;
+}
+
+/***********************
+Footer
+***********************/
+
+footer {
+  background: #f4f2f2;
+  margin-top: 50px;
+  position: relative;
+  height: 100px;
+}
+footer .row {
+  display: flex;
+  justify-content: start;
+  width: fit-content;
+}
+
+footer .logo img {
+  margin: 0px auto;
+  height: 40px;
+  padding: 5px;
+}
+footer .copyright {
+  padding: 10px 10px;
+  color: #277254;
+  font-size: 10px;
+  font-weight: lighter;
+}
+ul.footerminus {
+  list-style: none;
+}
+footer .footerminus li {
+  display: inline;
+  color: #277254;
+  font-family: Helvetica Neue;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+footer hr {
+  width: 98%;
+  margin: 10px;
+  color: #707070;
+}
+footer .footertext {
+  color: #277254;
+  padding: 0 10px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  font-size: 11px;
+}
+
+/******************** 
+Responsiveness 
+*********************/
+@media screen and (max-width: 1280px) {
+  .section2 .gridcontent .mainimage {
+    width: 235px;
+  }
+  .section2 .input-button input {
+    left: 84%;
+    top: 99%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section2 .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section2 .gridcontent .mainimage {
+    width: 400px;
+  }
+  .gridheading h1 {
+    font-size: 2.5rem;
+  }
+  .gridsubheading h2 {
+    font-size: 20px;
+  }
+  .gridtext p {
+    font-size: 22px;
+  }
+  .section2 .input-button input {
+    left: 96%;
+    top: 158%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section2 .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section2 .like img {
+    right: 54%;
+  }
+  .section2 .gridcontent .mainimage {
+    width: 266px;
+  }
+  .section2 .input-button input {
+    left: 80%;
+    top: 111%;
+  }
+  .gridtext p {
+    font-size: 20px;
+  }
+
+  .gridheading h1 {
+    font-size: 1.5rem;
+  }
+  .gridsubheading h2 {
+    font-size: 15px;
+  }
+  .section2 .textcontent {
+    position: absolute;
+    height: 160px;
+    top: 2%;
+    left: 44%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .section2 .gridcontent .mainimage {
+    width: 182px;
+  }
+  .gridheading h1 {
+    font-size: 1rem;
+  }
+  .gridsubheading h2 {
+    font-size: 13px;
+  }
+  .gridtext p {
+    font-size: 13px;
+    padding-top: 0;
+  }
+  .section2 .input-button input {
+    left: 74%;
+    top: 79%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section2 .textcontent {
+    position: relative;
+    height: 160px;
+    top: 0;
+    left: 16px;
+  }
+  .section2 .gridcontent {
+    width: 88%;
+    margin: 17px;
+    height: 99%;
+  }
+  .gridtext p {
+    font-size: 13px;
+  }
+  .gridheading h1 {
+    font-size: 1rem;
+  }
+  .section2 .gridcontent .mainimage {
+    width: 300px;
+  }
+  .section2 .input-button input {
+    left: 70%;
+    top: 97%;
+  }
+  .section2 .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+  .section2 .like img {
+    right: 1%;
+  }
+  footer {
+    height: 150px;
+  }
+  footer hr {
+    width: 93%;
+  }
+  footer .footerminus li {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .section2 .textcontent {
+    position: relative;
+    height: 160px;
+    top: 0;
+    left: 16px;
+  }
+  .section2 .gridcontent {
+    width: 88%;
+    margin: 17px;
+    height: 99%;
+  }
+  .gridtext p {
+    font-size: 13px;
+  }
+  .gridheading h1 {
+    font-size: 1rem;
+  }
+  .section2 .gridcontent .mainimage {
+    width: 273px;
+  }
+  .section2 .input-button input {
+    left: 70%;
+    top: 97%;
+  }
+  .section2 .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+  .section2 .like img {
+    right: 1%;
+  }
+  footer {
+    height: 150px;
+  }
+  footer hr {
+    width: 93%;
+  }
+  footer .footerminus li {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section2 .searchbox {
+    left: 22px;
+  }
+  .section2 .heading1 {
+    font-size: 23px;
+  }
+  .section2 .gridcontent {
+    width: 88%;
+  }
+  .section2 .input-button input {
+    left: 66%;
+  }
+  .section2 .searchbox input {
+    width: 270px;
+  }
+  .section2 .searchbox .searchicon {
+    right: 12px;
+  }
+  .section2 .gridcontent .mainimage {
+    width: 230px;
+  }
+  .gridheading h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .section2 .searchbox .searchicon {
+    left: 95%;
+  }
+  .navbar .menus {
+    font-size: 1rem;
+  }
+}

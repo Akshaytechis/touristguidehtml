@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+}
+
+/*****************
+Header
+*****************/
+
+header .navbar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fffcfc;
+  z-index: 2;
+}
+.logo img {
+  height: 60px;
+}
+.logo {
+  display: flex;
+}
+.logotext {
+  margin-top: 12px;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  color: #277254;
+  font-size: 20px;
+}
+.navbar .menus {
+  padding: 0px 20px;
+  color: #277254;
+  margin: auto 0;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  position: relative;
+  font-family: Helvetica Neue;
+}
+.navbar .menus img {
+  height: 18px;
+}
+
+/***********************
+Section 01
+************************/
+
+.section1 .background img {
+  width: 100%;
+  height: 100vh;
+}
+.section1 .searchbox {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  padding-right: 20px;
+}
+.section1 .searchbox input {
+  border: none;
+  border-radius: 6px;
+  padding: 5px 15px;
+  width: 260px;
+  height: 28px;
+}
+.section1 .searchbox img {
+  position: absolute;
+  right: 25px;
+  top: 7px;
+  height: 30px;
+}
+.section1 .heading1 {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 25px;
+  color: #277254;
+  font-family: Helvetica Neue;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section1 .grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section1 .gridcontent p {
+  text-align: center;
+  padding: 10px;
+  color: #277254;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  font-size: 15px;
+}
+.section1 .gridcontent img {
+  width: 70%;
+  margin-left: 15%;
+}
+.section1 .gallery {
+  margin: 0 70px;
+  width: fit-content;
+}
+.section1 .gallery .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.section1 .thumbnail {
+  width: 390px;
+  height: 415px;
+  border-radius: 10px;
+  position: relative;
+  margin: 3px;
+  background-color: #f0eded;
+  padding: 10px;
+}
+.section1 .thumbnail .like {
+  position: absolute;
+  border-radius: 10px;
+  height: 20px;
+  width: 20px;
+  top: 20px;
+  right: 20px;
+  background-color: #f0eded;
+}
+.section1 .thumbnail .like img {
+  height: 20px;
+  width: 20px;
+}
+.section1 .thumbnail img {
+  height: 300px;
+  width: 390px;
+}
+.section1 .thumbheading {
+  font-size: 1rem;
+  color: #277254;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+  padding-top: 8px;
+}
+.section1 .thumbtext {
+  color: #277254;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Helvetica Neue;
+}
+
+/********************************
+Footer
+********************************/
+
+footer {
+  background: #f4f2f2;
+  margin-top: 50px;
+  position: relative;
+  height: 100px;
+}
+footer .row {
+  display: flex;
+  justify-content: start;
+  width: fit-content;
+}
+
+footer .logo img {
+  margin: 0px auto;
+  height: 40px;
+  padding: 5px;
+}
+footer .copyright {
+  padding: 10px 10px;
+  color: #277254;
+  font-size: 10px;
+  font-weight: lighter;
+}
+ul.footerminus {
+  list-style: none;
+}
+footer .footerminus li {
+  display: inline;
+  color: #277254;
+  font-family: Helvetica Neue;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+footer hr {
+  width: 98%;
+  margin: 10px;
+  color: #707070;
+}
+footer .footertext {
+  color: #277254;
+  padding: 0 10px;
+  font-family: Helvetica Neue;
+  font-weight: 200;
+  font-size: 11px;
+}
+
+/***************************
+All Media Screen PArt
+***************************/
+@media screen and (max-width: 1280px) {
+  .section1 .gallery {
+    margin: 0 0;
+  }
+  .section1 .gallery .row {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section1 .gallery {
+    margin: 0 80px;
+  }
+  .section1 .gallery .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .section1 .thumbnail img {
+    height: 250px;
+    width: 320px;
+  }
+  .section1 .thumbnail {
+    width: 320px;
+    height: 385px;
+  }
+  .section1 .heading1 {
+    text-align: center;
+  }
+  .section1 .grid {
+    flex-direction: column;
+  }
+  .section1 .gridcontent p {
+    font-size: 30px;
+  }
+  .section1 .gallery {
+    margin: 0 25px;
+  }
+  .section1 .gallery .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section1 .gallery .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section1 .gallery {
+    margin: 0 90px;
+  }
+  .section1 .gridcontent p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section1 .heading1 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .section1 .gallery {
+    margin: 0 40px;
+  }
+  .section1 .gridcontent p {
+    font-size: 15px;
+  }
+
+  .section1 .gallery .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section1 .thumbnail img {
+    height: 250px;
+    width: 310px;
+  }
+  .section1 .thumbnail {
+    width: 310px;
+    height: 370px;
+  }
+  .section1 .grid {
+    flex-direction: column;
+  }
+
+  footer {
+    width: 100%;
+    height: 130px;
+  }
+  .logo img {
+    height: 30px;
+    padding: 16px 0;
+  }
+  .logotext {
+    margin-top: 16px;
+    font-size: 12px;
+  }
+  .section1 .searchbox input {
+    background-color: rgb(225 214 214 / 60%);
+    padding: 5px 25px;
+  }
+  footer .footerminus li {
+    font-size: 12px;
+  }
+  footer hr {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .section1 .gallery {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .section1 .gallery {
+    margin: 0 11px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .section1 .searchbox input {
+    padding: 5px 16px;
+  }
+  .section1 .thumbnail img {
+    height: 220px;
+    width: 270px;
+  }
+  .section1 .thumbnail {
+    width: 270px;
+  }
+  footer {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .section1 .searchbox {
+    left: 41px;
+    top: 72px;
+  }
+  .section1 .searchbox input {
+    width: 86%;
+  }
+
+  .section1 .thumbnail img {
+    height: 200px;
+    width: 230px;
+  }
+  .section1 .thumbnail {
+    width: 230px;
+  }
+  .section1 .gridcontent p {
+    font-size: 15px;
+  }
+  footer {
+    height: 160px;
+  }
+}
