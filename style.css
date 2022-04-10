@@ -50,7 +50,6 @@ Section 01
 
 .section1 .background img {
   width: 100%;
-  height: 100vh;
 }
 .section1 .searchbox {
   position: absolute;
@@ -106,7 +105,7 @@ Section 01
   gap: 25px;
 }
 .section1 .thumbnail {
-  width: 390px;
+  width: 375px;
   height: 415px;
   border-radius: 10px;
   position: relative;
@@ -128,8 +127,8 @@ Section 01
   width: 20px;
 }
 .section1 .thumbnail img {
-  height: 300px;
-  width: 390px;
+  height: 284px;
+  width: 370px;
 }
 .section1 .thumbheading {
   font-size: 1rem;
@@ -200,23 +199,47 @@ footer .footertext {
 All Media Screen PArt
 ***************************/
 @media screen and (max-width: 1280px) {
-  .section1 .gallery {
-    margin: 0 0;
-  }
   .section1 .gallery .row {
     gap: 15px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .section1 .gallery {
-    margin: 0 80px;
-  }
   .section1 .gallery .row {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+  .section1 .thumbnail img {
+    height: 250px;
+    width: 320px;
+  }
+  .section1 .thumbnail {
+    width: 320px;
+    height: 385px;
+  }
+  .section1 .heading1 {
+    text-align: center;
+  }
+  .section1 .grid {
+    flex-direction: column;
+  }
+  .section1 .gridcontent p {
+    font-size: 30px;
+  }
+  .section1 .gallery {
+    margin: 0 25px;
+  }
+  .section1 .gallery .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 850px) {
   .section1 .thumbnail img {
     height: 250px;
     width: 320px;
@@ -306,6 +329,7 @@ All Media Screen PArt
   footer hr {
     width: 95%;
   }
+  
 }
 @media screen and (max-width: 375px) {
   .section1 .gallery {

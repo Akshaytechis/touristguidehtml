@@ -90,6 +90,7 @@ Section 2
   background-color: #f0eded;
   margin: 20px;
   width: 93%;
+  height: 83%;
 }
 .section2 .gridcontent .mainimage {
   width: 270px;
@@ -259,12 +260,12 @@ Responsiveness
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .section2 .grid {
     grid-template-columns: repeat(1, 1fr);
   }
   .section2 .like img {
-    right: 54%;
+    right: 58%;
   }
   .section2 .gridcontent .mainimage {
     width: 266px;
@@ -308,6 +309,9 @@ Responsiveness
     left: 74%;
     top: 79%;
   }
+  .section2 .like img {
+    right: 55%;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -329,7 +333,8 @@ Responsiveness
     font-size: 1rem;
   }
   .section2 .gridcontent .mainimage {
-    width: 300px;
+    width: 100%;
+    padding: 10px;
   }
   .section2 .input-button input {
     left: 70%;
@@ -423,9 +428,22 @@ Responsiveness
 }
 @media screen and (max-width: 280px) {
   .section2 .searchbox .searchicon {
-    left: 95%;
+    left: 78%;
   }
   .navbar .menus {
     font-size: 1rem;
+  }
+  .section2 .searchbox input {
+    width: 217px;
+    font-size: 10px;
+  }
+  .section2 .gridcontent {
+    width: 84%;
+  }
+  .section2 .gridcontent .mainimage {
+    width: 198px;
+  }
+  .section2 .input-button input {
+    left: 58%;
   }
 }
